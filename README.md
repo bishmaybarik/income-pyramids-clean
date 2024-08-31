@@ -22,7 +22,7 @@ Create a folder where all your data will be stored. This will be your "master" f
 ### Step 3: Modify the Directory Path  
 In the `00_master` do-file, change the directory path to match your working directory:
 ```stata
-cap global dir "/Volumes/bishmayexp/Thesis"
+cap global dir "/Volumes/bishmayexp/Data"
 ```
 Once done, run the 00_master do-file. This will capture the necessary global macros.
 
