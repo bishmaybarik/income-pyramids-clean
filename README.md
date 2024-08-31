@@ -5,7 +5,7 @@ This repository contains two Stata do-files: `00_master` and `01_Clean`. By foll
 ## Folder Setup
 
 ### Step 1: Create Master Folder  
-Create a folder where all your data will be stored. This will be your "master" folder, containing subfolders for different stages of the data conversion process. For instance, you can name it `Data`.
+Create a folder where all your data will be stored. This will be your "master" folder, containing subfolders for different stages of the data conversion process. For example, you can name it `Data`.
 
 ### Step 2: Create Subfolders  
 - Inside the master folder, create the following subfolders:
@@ -23,3 +23,14 @@ Create a folder where all your data will be stored. This will be your "master" f
 In the `00_master` do-file, change the directory path to match your working directory:
 ```stata
 cap global dir "/Volumes/bishmayexp/Thesis"
+```
+Once done, run the 00_master do-file. This will capture the necessary global macros.
+
+### Step 4: Run the Cleaning Script
+
+- Next, run the 01_Clean do-file. This script will:
+  - Convert the CSV files to Stata .dta format.
+  - Save the .dta files in the income_india_mem_dta folder.
+  - Append the files and add the required variables to create a panel dataset.
+
+After running this, the final output will be a .dta file named member_income_clean.dta, located in the income_india_mem_dta folder, along with other processed files.
