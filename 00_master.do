@@ -11,7 +11,7 @@ macro drop all
 set more off
 
 
-cap global dir "/Volumes/bishmayexp/Thesis"
+cap global dir "/Volumes/bishmayexp/Data"
 
 
 * Set global for main directories
